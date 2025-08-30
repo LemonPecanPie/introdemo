@@ -1,4 +1,8 @@
 const Hello = (props) => {
+  const bornYear = () => {
+    const yearNow =new Date().getFullYear() - props.age;
+    return yearNow - props.age();
+  }
   return (
     <div>
       <p>
